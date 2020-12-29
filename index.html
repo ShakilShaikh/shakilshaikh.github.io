@@ -1,8 +1,53 @@
 <html>
 <head>
-<title> Shakil's Lab </title>
+	<title> Shakil's Lab </title>
+
 </head>
-<body>
-Hello Everyone
+<body onload="p()">
+<audio id="myAudio" controls autoplay loop>
+<source src="bgm.mp3" type="audio/mpeg">
+Music: Serenity By Composer Squad.
+Music Link: https://youtu.be/nZk0moIJBM4
+</audio>
+
+<script>
+var x = document.getElementById("myAudio");
+
+function p()
+{
+    x.play();
+}
+</script>
+
+<style>
+body {
+  background-image: url('img_bg.gif');
+  background-repeat: no-repeat;
+  background-attachment: fixed;  
+  background-size: cover;
+}
+.content {
+  background: rgba(0, 0, 0, 0.5);
+  color: #f1f1f1;
+}
+</style>
+
+
+
+
+<div class="content">
+<center><h1>Shakil's Lab</h1></center>
+<br>
+<p align=center><font size=5>Server currently under development</font></p>
+</div>
+<font>
+<table style="border: 1px solid transparent">
+<tr>
+    <td><div class="content">Home</div></td>
+    <td><div class="content">Projects</div></td>
+    <td><div class="content">About</div></td>
+</tr>
+</table>
+</font>
 </body>
 </html>
