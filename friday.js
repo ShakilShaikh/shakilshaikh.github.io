@@ -5,7 +5,7 @@ function run(){
 	var x = document.getElementById("bgm");
 	function frame()
 	{
-		if(width==10)
+		if(width==5)
 		{
 			x.volume = 0.5;
 			x.loop = true;
