@@ -1,54 +1,40 @@
 <html>
 <head>
-	<title> Shakil's Lab </title>
+  <meta charset="UTF-8">
+  <meta name="description" content="Shakil's website for projects">
+  <meta name="keywords" content="Shakil's,lab,project,profollio,github,heimdalr">
+  <meta name="author" content="Shakil,Shaikh">
+  <link rel="stylesheet" href="style.css">
+  <script src="friday.js"></script>
+ 
 
+
+  <title>Shakil's Lab</title>
 </head>
-<body onload="p()">
-<audio id="myAudio" autoplay loop controls hidden>
-<source src="bgm.ogg" type="audio/ogg">
-<source src="bgm.mp3" type="audio/mpeg">
-Music: Serenity By Composer Squad.
-Music Link: https://youtu.be/nZk0moIJBM4
-</audio>
-
-<script>
-var x = document.getElementById("myAudio");
-
-function p()
-{
-    x.play();
-}
-</script>
-
-<style>
-body {
-  background-image: url('img_bg.gif');
-  background-repeat: no-repeat;
-  background-attachment: fixed;  
-  background-size: cover;
-}
-.content {
-  background: rgba(0, 0, 0, 0.5);
-  color: #f1f1f1;
-}
-</style>
-
-
-
-
+<body onload="run()">
 <div class="content">
 <center><h1>Shakil's Lab</h1></center>
 <br>
 <p align=center><font size=5>Server currently under development</font></p>
 </div>
-<font>
-<table style="border: 1px solid transparent">
-<tr>
+<table>
+  <tr>
     <td><div class="content">Home</div></td>
     <td><div class="content">Projects</div></td>
     <td><div class="content">About</div></td>
-</tr>
+  </tr>
 </table>
-</font>
+
+ <audio id="bgm" controls hidden>
+  <source src="Persuasion.mp3" type="audio/mpeg">	
+  </audio>
+  
+<script>
+ //var x = document.getElementById("bgm");
+ //x.volume = 0.5;
+ //x.loop = true;
+ //x.load();
+ //x.play();
+</script>
 </body>
 </html>
