@@ -1,0 +1,12 @@
+body{
+	background-image: url('img_bg.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
+}
+
+.content{
+	background: rgba(0,0,0,0.5);
+	color: #f1f1f1;
+}
+
