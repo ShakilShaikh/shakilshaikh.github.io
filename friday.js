@@ -1,27 +1,38 @@
-
-function run(){
-	var width = 0;
-    var id = setInterval(frame, 1200);
-	var x = document.getElementById("bgm");
-	function frame()
-	{
-		if(width==5)
-		{
-			x.volume = 0.5;
-			x.loop = true;
-			x.load();
-			clearInterval(id);
-			x.play();
-		}
-		else
-		{
-			width+=1;
-			console.log(width);
-		}
-	}
+body{
+	background-image: url('img_bg.gif');
+	background-repeat: no-repeat;
+	background-attachment: fixed;
+	background-size: cover;
 }
 
-function jump(st){
-	//pass
-	var a = 1;
+#mythumb{
+	position: fixed;
+	right:0;
+	bottom:0;
+}
+
+.content{
+	background: rgba(0,0,0,0.5);
+	color: #f1f1f1;
+}
+
+.tabi{
+	background: rgba(0,0,0,0.5);
+	color: #f1f1f1;
+	width:100%;
+	padding: 20px;
+}
+
+.tablinks{
+	background: rgba(0,0,0,0.5);
+	color: #f1f1f1;
+}
+.tabcontent {
+  display: none;
+  padding: 6px 12px;
+  border-top: none;
+}
+
+.button:hover{
+	background-color: black;
 }
