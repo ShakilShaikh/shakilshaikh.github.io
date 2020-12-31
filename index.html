@@ -15,27 +15,55 @@
 <div class="content">
 <center><h1>Shakil's Lab</h1></center>
 <br>
-<p align=center><font size=5>Server currently under development</font></p>
+<p align=center id="greeter"><font size=5>Server currently under development</font></p>
 </div>
-<table>
+<table style="border: 20px solid transparent" width=50%>
   <tr>
-    <td><div class="content">Home</div></td>
-    <td><div class="content">Projects</div></td>
-    <td><div class="content">About</div></td>
+    <td class="button" align=middle><div class="tablinks" onclick="openTab(event,'home')">Home</div></td>
+    <td class="button" align=middle><div class="tablinks" onclick="openTab(event,'projects')">Projects</div></td>
+    <td class="button" align=middle><div class="tablinks" onclick="openTab(event,'about')">About</div></td>
   </tr>
 </table>
 
  <audio id="bgm" controls hidden>
   <source src="bgm.mp3" type="audio/mpeg">	
   </audio>
-  
-<script>
-  // Persuasion
- //var x = document.getElementById("bgm");
- //x.volume = 0.5;
- //x.loop = true;
- //x.load();
- //x.play();
-</script>
+<div id="projects" class="tabcontent">
+
+<br>
+<br>
+<br>
+<table style="border: 20px solid transparent" width=100%>
+  <tr>
+    <td>
+	  <img src="imgs/heimdallr.png" alt="heimdallr"/>
+	  <div class="tabi">
+	  <h2 onclick="jump('https://github.com/ShakilShaikh/HeimdallrBot')">Heimdallr</h2>
+	  <p>Heimdallr is a discord bot written in Python. Monitors all members and best admin tool</p>
+	  </div>
+	</td>
+  </tr>
+  <tr>
+    <td>
+	  <img src="imgs/loki.png" alt="loki"/>
+	  <div class="tabi">
+	  <h2>Loki</h2>
+	  <p>Loki is a IoT based AI written in Python, inspired by JARVIS, existing in Multiple server like Facebook, Slack, Discord and Home server</p>
+	  <br> has access to your device on your network and remote. Chatbot, Cyber Security Expert.
+	  </div>
+	</td>
+  </tr>
+</table>
+</div>
+<div class="tabcontent" id="about">
+  <div class="content">
+    Hello Everyone
+  </div>
+</div>
+<div class="tabcontent" id="home">
+  <div class="content">
+  <center><br>Here you'll find my most recent work.<br>I am currently working on<br></center>
+  </div>
+</div>
 </body>
 </html>
