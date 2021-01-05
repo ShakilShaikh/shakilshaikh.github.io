@@ -1,7 +1,7 @@
 
 function run(){
 	var width = 0;
-	openTab(event, 'home')
+	openTab(event, 'about')
     var id = setInterval(frame, 1200);
 	var x = document.getElementById("bgm");
 	function frame()
