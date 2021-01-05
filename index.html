@@ -23,6 +23,10 @@
     <td class="button" align=middle><div class="tablinks" onclick="openTab(event,'home')">Home</div></td>
     <td class="button" align=middle><div class="tablinks" onclick="openTab(event,'projects')">Projects</div></td>
     <td class="button" align=middle><div class="tablinks" onclick="openTab(event,'about')">About</div></td>
+    <td class="button" align=middle hidden><div class="tablinks">About</div></td>
+    <td class="button" align=middle hidden><div class="tablinks">About</div></td>
+    <td class="button" align=middle hidden><div class="tablinks" onclick="openTab(event,'cyrus')">About</div></td>
+    <td class="button" align=middle hidden><div class="tablinks" onclick="openTab(event,'blackall')">About</div></td>
   </tr>
 </table>
 
@@ -39,7 +43,7 @@
     <td>
 	  <img src="imgs/heimdallr.png" alt="heimdallr"/>
 	  <div class="tabi">
-	  <h2 onclick="jump('https://github.com/ShakilShaikh/HeimdallrBot')">Heimdallr</h2>
+	  <h2 onclick="openTab(event,'heimdallr')">Heimdallr</h2>
 	  <p>Heimdallr is a discord bot written in Python. Monitors all members. communicate with developers without sending DM or joining the home server. Confidential report. Best admin tool</p>
 	  </div>
 	</td>
@@ -48,7 +52,7 @@
     <td>
 	  <img src="imgs/loki.png" alt="loki"/>
 	  <div class="tabi">
-	  <h2>Loki</h2>
+	  <h2 onclick="alert('Not Published for public yet')">Loki</h2>
 	  <p>Loki is a IoT based AI written in Python, inspired by JARVIS, existing in Multiple server like Facebook, Slack, Discord and Home server</p>
 	  <br> has access to your device on your network and remote. Chatbot, Cyber Security Expert.
 	  </div>
@@ -58,7 +62,7 @@
     <td>
 	  <img src="imgs/cyrus1.png" alt="cyrus"/>
 	  <div class="tabi">
-	  <h2 onclick="jump('https://github.com/ShakilShaikh/Cyrus')">Cyrus</h2>
+	  <h2 onclick="alert('Page Not Ready yet!')">Cyrus</h2>
 	  <p>Cyrus is a basic hash cracking tool for widows OS Written in Python</p>
 	  </div>
 	</td>
@@ -85,6 +89,81 @@
 <div class="tabcontent" id="home">
   <div class="content">
   <center><br>Here you'll find my most recent work.<br>I am currently working on<br></center>
+  </div>
+</div>
+<div class="tabcontent" id="heimdallr">
+  <div class="content">
+  <img src="imgs/heimdallr.png" alt="sk" align=right style="right:0;"/>
+  
+	<h2>HeimdallrBot</h2>
+    <font size=4>
+<br>
+This bot was created for <a href="https://blog.discordapp.com/discord-community-hack-week-build-and-create-alongside-us-6b2a7b7bba33" target="_blank">Discord Hack Week</a>. Heimdallr Bot allows you to monitor your server and it's members and also allows you to communicate with developers without sending DM or joining the home server. It will share reports only with server owner and moderators.<br>
+<br>
+[<a href="https://discordapp.com/oauth2/authorize?client_id=593000044106612746&amp;permissions=8&amp;scope=bot" target="_blank">invite to your server</a>]<br>
+<br>
+<br>
+<u><b>How To Use:</b></u><br>
+<br>
+We have a issue for now (see note). You need to create a channel named heimdallr-bot with permission allow read everyone. allow send only for admin and moderator.<br>
+To command heimdallr. You need to be the owner of server or must have a role named 'mod'.<br>
+<br>
+<br>
+Here is some following commads that you can use:-<br>
+<br>
+<u><b>Server Status :</b></u><br>
+<br>
+!server status -- to get numbers of currently active members on server<br>
+!server members -- to get&nbsp; numbers of total members<br>
+<br>
+<br>
+<u><b>Member Status:</b></u><br>
+<br>
+!act [mention member] -- to get activities of a specific member [voice channel,game,stream,listening,online status]<br>
+!roles [mention member]&nbsp; -- to get which roles do the member has<br>
+!when [mention member] -- to get when the member was joined the server<br>
+!who [mention member]&nbsp; -- to get real name and identity[owner/bot/regular member/nick name]&nbsp; <br>
+&nbsp; <br>
+<br>
+<u><b>Text Channels:</b></u><br>
+<br>
+!clear [ammount] -- to clear amount of message on heimdallr-bot channel<br>
+!clear [ammount] [channel_name] -- to clear amount of message on given channel<br>
+!comments [mention member] count -- to count total message of member on heimdallr-bot<br>
+!comments [mention member] count [channel_name] -- to count total message of member on given channel<br>
+!comments [name] del --to delete all message of member on heimdallr-bot<br>
+!comments [name] del [channel_name] --to delete all message of member on given channel<br>
+<br>
+<br>
+<u><b>Voice Channel:</b></u><br>
+<br>
+!voice [channel name] -- to get how many member is connected to that channel<br>
+<br>
+<br>
+<u><b>Extras:</b></u><br>
+<br>
+!credits -- To find us<br>
+!feedback [single_line message] -- to communicate with developer<br>
+!hdhelp -- for this page link<br>
+!version -- to see version of the bot<br>
+<br>
+<br>
+<br>
+<u><b>Developers:</b></u><br>
+<br>
+!servstat -- To see in how many servers the bot is connected<br>
+!sendAll -- Send message to all server<br>
+!sendMsg [uid] [sid] [chid] [text] -- Send message to a specific channel<br>
+<br>
+<br>
+<br>
+More commads will be added in future<br>
+<br>
+<p>Github page</p>
+<br>
+[ You can send feedback on heimdallr-feedback channel on our <a href="http://discord.gg/VndGYTs" target="_blank">home</a> server.<br>
+<br></div>
+	</font>
   </div>
 </div>
 </body>
